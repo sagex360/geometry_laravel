@@ -21,6 +21,7 @@
     },
     "dependencies": {
         "vue": "^2.6.10",
-        "vue-material": "^1.0.0-beta-11"
+        "vue-material": "^1.0.0-beta-11",
+        "vue-toasted": "^1.1.27"
     }
 }
