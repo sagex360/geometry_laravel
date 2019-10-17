@@ -13,9 +13,12 @@ class CreateFiguresTable extends Migration
      */
     public function up()
     {
-        Schema::create('figures', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->timestamps();
+        Schema::create('figures', static function (Blueprint $table) {
+            $table->bigIncrements('uid');
+            $table->string('id');
+            $table->unsignedSmallInteger('type');
+            $table->string('color');
+            $table->unsignedInteger('revision');
         });
     }
 
